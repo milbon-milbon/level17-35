@@ -30,9 +30,15 @@
 1. 課題ごとにその課題のブランチにpushしてください。
 1. mainブランチにプルリクエストを出してください。
 1. 気になる部分があれば、そこが分かるようにプルリクエストにコメントを残して、講師陣に質問をしてください。
+1. プルリクエストが出せた方は、Discordの`announce`チャンネルにて提出したことお知らせください。その際`@help-365`のメンションを付けてください。
 
 
 ### 講師陣
 
 - mei-omomo
 - HarukaNakashima
+- mochi2fire
+- yusukeyamane
+- yuki-yuki-engineer
+- WakayoIshida
+- RoboticsY
