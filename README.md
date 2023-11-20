@@ -42,3 +42,4 @@
 - yuki-yuki-engineer
 - WakayoIshida
 - RoboticsY
+- sekine555
