@@ -23,9 +23,9 @@ class Median extends MaxSmall{
     }
     
     getMedian(){
-        const sortedArr = this.arr.sort((a, b) => a - b);
+        const sortedArr = this.arr.toSorted((a, b) => a - b);
         const mid = Math.floor(sortedArr.length / 2);
-        return sortedArr.length % 2 !== 0 ? sortedArr[mid] : (sortedArr[mid - 1] + sortedArr[mid]) / 2;
+        return sortedArr.length % 2 !== 0 ? sortedArr[mid] :Number( (sortedArr[mid - 1] + sortedArr[mid]) / 2);
     }
 }
 
@@ -36,14 +36,14 @@ class Sort extends MaxSmall {
     }
 
     getSorted() {
-        return arr.sort((a, b) => a - b);
+        return arr.toSorted((a, b) => a - b);
     }
 }
 module.exports = MaxSmall;
 module.exports = Median;
 module.exports = Sort;
 
-let arr = [1,1, 2,2,2,2, 3, 4,4,4,4,4,4,4, 5];
+const arr = [1,1, 2,2,2,2, 3, 4,4,4,4,4,4,4, 5];
 let number = new MaxSmall(arr);
 console.log(number.getMax());
 console.log(number.getMin());

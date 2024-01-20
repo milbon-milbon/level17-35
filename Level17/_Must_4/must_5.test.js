@@ -16,9 +16,9 @@ test('should return the minimum number from an array of numbers', () => {
     });
 
 
-    test('should return the median number from an array of numbers', () => {                                                                                         
-        let get = new Median(1,1, 2,2,2,2, 3, 4,4,4,4,4,4,4, 5);                                                                                                     
-        expect(get.getMedian()).toBe(1);
+test('should return the median number from an array of numbers', () => {                                                                                         
+    let get = new Median(1,1,2,2,2,2,3,4,4,4,4,4,4,4,5);                                                                                                     
+    expect(get.getMedian()).toBe(4);
   });
 
 test('should return the sort number from an array of numbers', () => {

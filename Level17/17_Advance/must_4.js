@@ -19,7 +19,7 @@ Median.prototype = Object.create(MaxSmall.prototype);
 Median.prototype.constructor = Median;
 
 Median.prototype.getMedian = function() {
-  let sortedArr = this.arr.sort((a, b) => a - b);
+  let sortedArr = this.arr.toSorted((a, b) => a - b);
   let len = sortedArr.length;
   let median = len % 2 === 0 ? (sortedArr[len / 2 - 1] + sortedArr[len / 2]) / 2 : sortedArr[Math.floor(len / 2)];
   return median;
@@ -33,7 +33,7 @@ Sort.prototype = Object.create(MaxSmall.prototype);
 Sort.prototype.constructor = Sort;
 
 Sort.prototype.getSorted = function() {
-  return this.arr.sort((a, b) => a - b);
+  return this.arr.toSorted((a, b) => a - b);
 };
 
 let arr = [1, 1, 2, 2, 2, 2, 3, 4, 4, 4, 4, 4, 4, 4, 5];
