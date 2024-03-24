@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #565555;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  }
+  .container {
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+    }
+   .main-contents {
+    overflow: hidden;
+    margin: 0 50px;
+    }
+   .side-menu {
+    float:right;
+    width: 60%;
+    height: 100%;
+    padding: 100px;
+    margin: 0;
+    background-color: #fabab6;
+    animation:rainbows 7s infinite;
+    -webkit-animation:rainbows 7s infinite;
+    }
+
+  h1 {
+    font-size: 50px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    padding: 50px 0 0 100px;
+}
+h1 a{
+    animation:rainbow 7s infinite;
+    -webkit-animation:rainbow 7s infinite;
+}
+@keyframes rainbows{
+    0%   {background-color:#ffe6e1;}
+    25%  {background-color:#fdcb9e;}
+    50%  {background-color:#fdcbc1;}
+    75%  {background-color:#ffff8c;}
+    90%  {background-color:#b2dffb;}
+    100% {background-color:#ffe6e1;}
+  }
+  @keyframes rainbow{
+    0%   {color:#ffe6e1;}
+    25%  {color:#fdcb9e;}
+    50%  {color:#fdcbc1;}
+    75%  {color:#ffff8c;}
+    90%  {color:#b2dffb;}
+    100% {color:#ffe6e1;}
+  }
+  h2 {
+    padding: 0 0 0 100px;
+    color: whitesmoke;
+    font-family: "Heebo", sans-serif;
+  }
+
+  li{
+    margin-bottom: 25px;
+    font-size: 25px;
+    padding: 0 0 0 100px;
+    list-style: none;
+  }
+
+  ul {
+    position: relative;
+  }
+  ul li {
+    line-height: 1.5;
+  }
+
+  a{
+    text-decoration: none;
+    color: whitesmoke;
+    position: relative;
+  }
+  li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom: 0;
+    background-color: #f4ada8;
+    height: 2px;
+    width: 100%; 
+    opacity: 0;
+    transition:opacity 0.6s ease-out;
+  }
+  
+  li a:hover::after {
+  opacity: 1;
+  }
+  nav{
+    float: left;
+  }
